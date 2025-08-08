@@ -15,24 +15,25 @@ export function UsersAvaters() {
           return (
             <div
               key={index}
+              style={{ zIndex: users.length - index }}
               className="bg-default p-0.5 rounded-full  relative -mr-2 "
             >
-              <div className="relative  size-[2rem]">
+              <div className="relative overflow-hidden rounded-full  size-[2rem]">
                 <Image
                   alt={avater}
                   src={avater}
-                  fill
-                  sizes="300px"
-                  className="w-full h-full rounded-full object-cover"
+                  style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                  width={200}
+                  height={500}
                 />
               </div>
             </div>
           );
         })}
       </div>
-      <p className="text-[.95rem]">
-        <span>Ava, Liam, Noah</span>
-        <span></span>
+      <p className="text-[.95rem] text-[#15272D9E]">
+        <span>Ava, Liam, Noah</span> {"    "}
+        <span>+12 others</span>
       </p>
     </div>
   );

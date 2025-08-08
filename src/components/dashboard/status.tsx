@@ -7,7 +7,7 @@ export function TableStatus({ type }: { type: string }) {
         style={{ backgroundColor: color }}
         className="block size-1.5 shrink-0 rounded-full "
       />
-      <span className="text-[.94rem] font-medium">{type}</span>
+      <span className="sm:text-[.94rem] text-[.7rem] font-medium">{type}</span>
     </div>
   );
 }

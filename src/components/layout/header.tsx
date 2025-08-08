@@ -1,9 +1,9 @@
 "use client";
 
 import { useSidebar } from "@/store/sidebar";
-import { SearchInput } from "../common";
 import { BrandIcons, UIIcons } from "../icons";
 import User from "./user";
+import { SearchInput } from "./search";
 
 export const Header = () => {
   const { toggleIsCollapsed, isCollapsed } = useSidebar();
@@ -28,7 +28,7 @@ export const Header = () => {
             <SearchInput />
           </div>
           {/* Other apps dropdown */}
-          <div className="md:flex hidden items-center">
+          <div className="md:flex hidden shrink-0 items-center">
             <button className="inline-flex hover:scale-105 transition-transform active:scale-100 items-center justify-center">
               <UIIcons.AppGrid />
             </button>

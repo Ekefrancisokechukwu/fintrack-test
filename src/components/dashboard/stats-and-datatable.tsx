@@ -23,11 +23,10 @@ export function StatsAndDatatable() {
       <div className="mt-8">
         <h1 className="sm:text-xl text-[1.2rem]  font-bold">Summary</h1>
         <StatsCards />
-      </div>
-
-      {/* Transaction Table */}
-      <div className="mt-8">
-        <TransactionTable />
+        {/* Transaction Table */}
+        <div className="mt-8">
+          <TransactionTable />
+        </div>
       </div>
     </div>
   );
